@@ -1,0 +1,9 @@
+ const stringList = ["banana", "apple", "orange", "grape", "kiwi"];
+
+// Sorting in ascending order
+const sortedListAsc = stringList.slice().sort();
+document.write("Sorted in ascending order:\n", sortedListAsc);
+
+// Sorting in descending order
+const sortedListDesc = stringList.slice().sort((a, b) => b.localeCompare(a));
+document.write("Sorted in descending order:", sortedListDesc);
